@@ -157,16 +157,25 @@ terraform apply
 This will provision all AWS resources.
 
 ### 4️⃣ Build & Push Docker Images
-Authenticate Docker to ECR and push images:
 
-**API**
+Authenticate Docker with **Amazon ECR** before pushing images.
+
+#### Authenticate Docker to Amazon ECR
+
+```bash
+aws ecr get-login-password --region <region> | docker login --username AWS --password-stdin <account-id>.dkr.ecr.<region>.amazonaws.com
+```
+
+#### Build and Push API Service
+
 ```bash
 docker build -t api-health-api -f docker/api.Dockerfile .
 docker tag api-health-api:latest <account-id>.dkr.ecr.<region>.amazonaws.com/api-health-api:latest
 docker push <account-id>.dkr.ecr.<region>.amazonaws.com/api-health-api:latest
 ```
 
-**Worker**
+#### Build and Push Worker Service
+
 ```bash
 docker build -t api-health-worker -f docker/worker.Dockerfile .
 docker tag api-health-worker:latest <account-id>.dkr.ecr.<region>.amazonaws.com/api-health-worker:latest
