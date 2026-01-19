@@ -1,0 +1,37 @@
+# ---------------------------
+# Python
+# ---------------------------
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual environments
+venv/
+.env
+
+# ---------------------------
+# AWS / Secrets
+# ---------------------------
+.aws/
+*.pem
+
+# ---------------------------
+# Terraform
+# ---------------------------
+.terraform/
+terraform.tfstate
+terraform.tfstate.backup
+*.tfvars
+
+# ---------------------------
+# Docker
+# ---------------------------
+*.log
+
+# ---------------------------
+# OS / Editor
+# ---------------------------
+.DS_Store
+.vscode/
+.idea/
