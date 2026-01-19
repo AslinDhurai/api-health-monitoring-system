@@ -137,7 +137,7 @@ All AWS resources are provisioned using Terraform.
 
 ### 1️⃣ Clone the Repository
 ```bash
-git clone <your-private-repo-url>
+git clone https://github.com/AslinDhurai/api-health-monitoring-system
 cd api-health-monitor
 ```
 
