@@ -1,8 +1,6 @@
 API Health Monitoring System
 ===========================
 
-DevOps Internship Assignment – 2026
-
 📌 Overview
 -----------
 
@@ -261,5 +259,4 @@ The focus is on design thinking and operational correctness, not just feature co
 ---------
 
 Aslin Dhurai  
-DevOps Internship Candidate – 2026
 
